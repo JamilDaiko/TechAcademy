@@ -1,16 +1,10 @@
-/* css reser */
 *{
-    /* retirar a margem externa */
     margin: 0;
-    /* retirar a margem interna */
     padding: 0;
 }
 header {
-    /* cor de fundo */
     background-color: white;
-    /* lagura */
     width: 100%;
-    /* sombra */
     box-shadow: 0 0 10px #ccc ;
 }
 .centro{
@@ -22,10 +16,7 @@ body{
     font-size: 16px;
 }
 h2{
-    /* centralizar */
     text-align: center;
-    /* maiusculo */
     text-transform: uppercase;
-    /* tamanho da fonte */
     font-size: 32px;
 }
