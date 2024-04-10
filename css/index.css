@@ -1,47 +1,71 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color:white;
-    width: 100%;
-    box-shadow: 0 0 10px #ccc ;
-}
-header nav{
-    float: right;
-}
-header nav ul{
-    list-style: none;
-}
-header nav ul li{
-    display: inline-block;
-    margin: 25px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-.centro{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-.centro_titulo{
-    padding-top: 20px;
+padding: 0;
+margin: 0;
 }
 body{
-    font-family: arial, verdana;
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 32px;
-}
-.game_req ul li strong{
-    color: #61686D;
-    margin-right: 10px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    text-transform: none;
 
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    box-shadow: 30px 30px 60px;
+
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+
+}
+.menu ul li {
+
+    list-style: none;
+    display: flex;
+    float: left;
+    
+    margin: 30px 20px;
+
+    text-align: right;
+    font-size: 18px;
+    font-weight: bolder;
+
+   
+
+}
+
+
+.menu ul li a{
+
+    text-decoration: none;
+
+    border-bottom: 3px solid #ababab;
+    box-shadow: #c6bdbd;
+    background-color: #fef6f6;
+    border-radius: 40px;
+    padding: 4px 30px;
+
+    color: black;
+    /* tempo da animação */
+    transition: 500ms
+
+}
+
+.menu ul li a:hover {
+
+    background-color: rgb(14, 16, 60);
+
+    color: white;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; 
 }
