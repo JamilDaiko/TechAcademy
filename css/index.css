@@ -38,7 +38,7 @@ header{
 }
 
 
-.menu ul li a{
+.nav-item a, .mobile-menu .nav-item a{
 
     text-decoration: none;
 
@@ -61,6 +61,19 @@ header{
     color: white;
 }
 
+.img{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
 
 footer {
     width: 100%;
@@ -68,4 +81,65 @@ footer {
     color: #fff;
     text-align: center;
     line-height: 30px; 
+}
+
+@media only screen and (max-width: 431px) {
+
+    .menu{padding: 1.5rem 4rem;}
+
+    .nav-item  a{
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button  {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item  a{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu a{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu  a{
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    i{
+        font-size: 45px;
+        background-color: transparent;
+    }
+
+
+    header  { width: 430px;
+        height: 100px;
+
+    }
+    header img {width: 200px;
+        height: 100px;
+    }
+
+.img_ph{ width: 400px;
+    height: 150;
+
+}
+
+
+
 }
