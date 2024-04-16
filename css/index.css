@@ -1,13 +1,14 @@
-*{
-padding: 0;
-margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-header{
+header {
 
     display: flex;
     justify-content: space-between;
@@ -17,28 +18,31 @@ header{
 
     box-sizing: border-box;
 }
+
 .menu {
     display: flex;
 
 }
+
 .menu ul li {
 
     list-style: none;
     display: flex;
     float: left;
-    
+
     margin: 30px 20px;
 
     text-align: right;
     font-size: 18px;
     font-weight: bolder;
 
-   
+
 
 }
 
 
-.nav-item a, .mobile-menu .nav-item a{
+.nav-item a,
+.mobile-menu .nav-item a {
 
     text-decoration: none;
 
@@ -51,7 +55,6 @@ header{
     color: black;
     /* tempo da animação */
     transition: 500ms
-
 }
 
 .menu ul li a:hover {
@@ -61,85 +64,131 @@ header{
     color: white;
 }
 
-.img{
+.img {
     margin-top: 10px;
     text-align: center;
     width: 100%;
 }
 
-.mobile-menu-icon{
+.mobile-menu-icon {
     display: none;
 }
+
 .mobile-menu {
     display: none;
 }
 
+.tex-1 {
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.personagem{
+    width: 90%;
+    box-shadow: 0 0 10px #CCC;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px;
+
+}
+#Fantasma{width: 120px ;
+    height: 184px;
+
+}
+#Esqueleto{width: 103px;
+height: 164px;}
 
 footer {
     width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
-    line-height: 30px; 
+    line-height: 30px;
 }
 
 @media only screen and (max-width: 431px) {
 
-    .menu{padding: 1.5rem 4rem;}
+    .menu {
+        padding: 1.5rem 4rem;
+    }
 
-    .nav-item  a{
+    .nav-item a {
         display: none;
     }
+
     .login-button {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button  {
+
+    .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-    .mobile-menu .nav-item  a{
+
+    .mobile-menu .nav-item a {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu a{
+
+    .mobile-menu a {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu  a{
+
+    .mobile-menu a {
         width: 100%;
     }
+
     .open {
         display: block;
     }
-    i{
+
+    i {
         font-size: 45px;
         background-color: transparent;
     }
 
 
-    header  { width: 430px;
+    header {
+        width: 430px;
         height: 100px;
 
     }
-    header img {width: 200px;
+
+    header img {
+        width: 200px;
         height: 100px;
     }
 
-.img_ph{ width: 400px;
-    height: 150;
+    .img_ph {
+        width: 400px;
+        height: 150;
 
-}
+    }
+    .flex-container{
 
+        flex-direction: column;
+        
+    }
 
 
 }
